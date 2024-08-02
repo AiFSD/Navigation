@@ -1,0 +1,274 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+nav {
+    background-image: linear-gradient(to bottom, #333333b0, #444);
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav ul li a.active {
+    background-color: white;
+    border-radius: 3px;
+    border: #000 1px solid;
+}
+
+.content {
+    padding: 20px;
+}
+
+.course-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.course-card {
+    flex: 0 0 250px;
+    background-color: #fff;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    height: fit-content;
+    border: 1px solid #b3b3b3;
+    border-radius: 7px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.979);
+   
+}
+
+.course-card h2 {
+    margin-top: 0;
+    font-weight: 600;
+}
+
+.course-card ul {
+    list-style-type: none;
+    padding-left: 0;
+    text-decoration: underline;
+    font-size: larger;
+    
+}
+
+.course-card li {
+    background: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.fsdcard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 50px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.fsdcards {
+    background-color: #fff;
+    width: fit-content;
+    border: 1px solid #ddd;
+    height: 360px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.979);
+    padding: 20px;
+}
+
+.fsdcards h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    
+}
+
+.fsdcards p {
+    font-size: 16px;
+    color: #000;
+
+}
+
+img {
+    width: 280px;
+    height: 190px;
+    border-bottom: solid #333 1px;
+}
+
+.card-body {
+    padding-left: 20px;
+}
+
+.dm {
+    display: flex;
+    gap: 90px;
+}
+
+.head {
+    background-image: linear-gradient(to bottom, #455A64, #212121);
+    height: fit-content;
+    padding: 5px;
+    color: #000;
+    
+}
+.head h2{
+    color: white;
+
+}
+
+.header {
+    height: 250px;
+    
+   
+}
+
+.guvi {
+    height: 250px;
+    width: 100%;
+}
+
+.all {
+    text-align: center;
+}
+
+@media only screen and (max-width: 300px) {
+    .course-cards {
+        flex-direction: column;
+    }
+
+    .course-card {
+        margin: 10px 0;
+        flex: 0 0 100%;
+    }
+
+    .fsdcard {
+        flex-direction: column;
+    }
+
+    .fsdcards {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .dm {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav ul {
+        flex-direction: column;
+    }
+
+    .nav ul li {
+        margin: 10px 0;
+    }
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 600px) {
+    .course-cards {
+        flex-wrap: wrap;
+    }
+
+    .course-card {
+        flex: 0 0 40%;
+    }
+
+    .fsdcard {
+        flex-wrap: wrap;
+    }
+
+    .fsdcards {
+        width: 40%;
+    }
+
+    .nav ul {
+        flex-wrap: wrap;
+    }
+
+    .nav ul li {
+        margin: 10px;
+    }
+}
+
+
+@media only screen and (min-width: 769px) and (max-width: 900px) {
+    .course-cards {
+        flex-wrap: wrap;
+    }
+
+    .course-card {
+        flex: 0 0 30%;
+    }
+
+    .fsdcard {
+        flex-wrap: wrap;
+    }
+
+    .fsdcards {
+        width: 30%;
+    }
+}
+
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    .course-cards {
+        flex-wrap: wrap;
+    }
+
+    .course-card {
+        flex: 0 0 25%;
+    }
+
+    .fsdcard {
+        flex-wrap: wrap;
+    }
+
+    .fsdcards {
+        width: 25%;
+    }
+}
+
+
+@media only screen and (min-width: 1201px) {
+    .course-cards {
+        flex-wrap: wrap;
+    }
+
+    .course-card {
+        flex: 0 0 20%;
+    }
+
+    .fsdcard {
+        flex-wrap: wrap;
+    }
+
+    .fsdcards {
+        width: 20%;
+    }
+}
